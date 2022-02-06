@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jahiem Mcleod - week 5 activity 5 and 6</title>
+    <link rel="stylesheet" href="modal.css" />
+  </head>
+  <body>
+    <form action="{{url_for('thankyou')}}" method="post">
+      <fieldset>
+        <legend>CHECKOUT</legend>
+          <h3>Items in your bag</h3>
+          <span id="items"><p id="price"></p></span>
+          <hr />
+          <label for="username">
+            Enter username:
+            <input type="text" name="username" placeholder="Type Username" id="username" /> </label>
+            <label for="email">
+            Enter email address: <input type="email" name="emailAddress" placeholder="Type Email Address " /></label>
+            <input type="submit" name="submit" value="SUBMIT ORDER" class="submit" />
+          </label>
+      </fieldset>
+    </form>
+    <script src="checkout.js"></script>
+  </body>
+</html>

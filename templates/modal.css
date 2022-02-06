@@ -1,0 +1,260 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.title {
+    background-color: purple;
+    color: pink;
+    text-align: center;
+}
+
+.link {
+    background-color: darkgrey;
+    color: purple;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.link:hover {
+    background-color: purple;
+    color: darkgray;
+    box-shadow: 0px 0px 3px 1px purple;
+}
+
+
+
+.modalWindow {
+     background-color: rgba(150, 150, 150, 0.7);
+     position: fixed;
+     top: 0px;
+     bottom: 0px;
+     left: 0px;
+     right: 0px;
+     opacity: 0;
+     pointer-events: none;
+}
+
+.modalWindow:target {
+    opacity: 1;
+    pointer-events: auto;
+    transition: ease-in-out 0.5s;
+}
+
+.content {
+    width: 550px;
+    height: 450px;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+.close {
+    background-color: lightgray;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-decoration: none;
+    color: darkGray;
+    font-weight: 600;
+}
+
+.close:hover {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+.info {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 10%; 
+}
+
+.info img {
+    width: 30%;
+    height: 80%;
+    margin: 5%;
+    
+}
+
+.p {
+    position: absolute;
+    width: 60%;
+    top: 0px;
+    right: 0px;
+}
+
+.p i {
+    font-size: 0.6em;
+}
+
+.p span {
+    text-decoration: line-through;
+}
+
+.p b {
+    color: red;
+    font-size: 1.2em;
+}
+
+.p hr {
+    margin-top: 40px;
+    opacity: none;
+}
+
+.add {
+    display: block;
+    width: 50%;
+    margin: 50px auto 0px auto;
+    background-color: rgb(50, 50, 50);
+    text-align: center;
+    padding: 10px 0px;
+    color: lightgray;
+    text-decoration: none;
+    font-style: bold;
+}
+
+.add:hover {
+    background-color: lightgray;
+    color: rgb(50, 50, 50);
+}
+
+/* 
+================
+    Activity 7
+================
+*/
+
+.items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.items h3 {
+    color: blue;
+    font-style: bold;
+    font-style: italic;
+}
+
+.special {
+    color: red;
+}
+
+
+
+.items img {
+    width: 300px;
+    height: 472px;
+}
+
+.modalWin1, .modalWin2 {
+    background-color: rgba(150, 150, 150, 0.7);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modalWin1 hr,
+.modalWin2 hr {
+    margin-top: 5%;
+    height: 1%;
+    width: 80%;
+    background-color: lightgray;
+    border: none;
+}
+
+.modalWin1:target, 
+.modalWin2:target {
+     opacity: 1;
+     pointer-events: auto;
+     transition: ease-in-out 0.5s;
+}
+
+.modalWin1 h2, 
+.modalWin2 h2{
+    position: relative;
+    top: 5%;
+    left: 10%;
+    font-size: 24px;
+}
+
+.in {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.in img {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    top: 2%;
+}
+
+.in div:nth-child(2) {
+    position: relative;
+    top: 2%;
+}
+
+.c {
+    width: 680px;
+    height: 680px;
+}
+.enjoy {
+    width: 100%;
+    position: absolute;
+    top: 78%;
+    background-color: lightgray;
+}
+
+.enjoy p {
+    margin-left: 9%;
+    margin-bottom: 5px;
+    padding: 1px;
+    font-size: 1.2em;
+}
+
+.enjoy hr {
+    background-color: white;
+    height: 3px;
+    margin-top: 0;
+    margin-left: 9%;
+}
+
+.enjoy a {
+    font-size: 18px;
+    width: 30%;
+    color: black;
+    background-color: white;
+    margin: 10px 10PX 10px 9%;
+    padding: 5px;
+}
+
+/* 
+Activity week 5
+checkout.html styles
+*/
+
+.fieldset {
+    max-width: 60%; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.fieldset hr {
+    margin: 1em;
+}
+
+.submit {
+    margin: 1em;
+}
